@@ -1,29 +1,12 @@
-const projects = [
-  {
-    title: 'My Cool App',
-    description: 'A brief summary of the app.',
-    link: 'https://github.com/yourname/my-cool-app',
-    image: '/assets/project1.png',
-  },
-  // Add more projects
-];
-
-function Projects() {
+export default function Projects() {
   return (
-    <section id="projects">
+    <section style={{ padding: '2rem' }}>
       <h2>Projects</h2>
-      <div>
-        {projects.map((project) => (
-          <div key={project.title}>
-            <img src={project.image} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noreferrer">View</a>
-          </div>
-        ))}
-      </div>
+      <ul>
+        <li>Project 1 - Description</li>
+        <li>Project 2 - Description</li>
+        <li>Project 3 - Description</li>
+      </ul>
     </section>
   );
 }
-
-export default Projects;

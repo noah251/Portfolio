@@ -1,8 +1,13 @@
-export default function Hero() {
+import React from 'react';
+
+function Hero() {
   return (
-    <section style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the hero section of the site.</p>
-    </section>
+    <div className="h-screen bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+      <h1 className="text-5xl text-white font-bold">
+        Tailwind is working! 🚀
+      </h1>
+    </div>
   );
 }
+
+export default Hero;
